@@ -106,7 +106,8 @@ html {
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
-  color: #e2e3ed;
+  /* color: #e2e3ed; */
+  color: #E9EAF1;
   text-align: left;
 }
 
@@ -122,12 +123,16 @@ a {
   text-decoration: none;
 }
 
+.mission h1,
 h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
 
+.form-description h2,
+.faq h2,
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
@@ -230,9 +235,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -277,6 +290,7 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  margin-top: 10px;
 }
 
 input[type=button] {
@@ -401,7 +415,7 @@ input[type=button] {
   margin: 50px 0 0 0;
 }
 
-.faq h2 {
+.faq h1 {
   margin-bottom: 40px;
   line-height: 1;
 }
@@ -410,6 +424,7 @@ input[type=button] {
   margin-bottom: 50px;
 }
 
+.faq-content h2,
 .faq-content h4 {
   line-height: 1.333;
 }
@@ -512,11 +527,14 @@ input[type=button] {
     margin: 100px 0;
   }
 
+  .mission h1,
+  .faq h1,
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
   }
 
+  .form-description h2,
   h3 {
     font-size: 1.5em;
     line-height: 1.25;
@@ -566,6 +584,7 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
+    align-items: center;
   }
 
   aside .content-wrapper .form-description,
@@ -589,6 +608,10 @@ input[type=button] {
 
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -627,6 +650,7 @@ input[type=button] {
     margin-bottom: 0;
   }
 
+  footer h3,
   footer h4 {
     font-size: 1.5em;
     margin-bottom: 40px;
@@ -634,6 +658,11 @@ input[type=button] {
 
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -669,6 +698,7 @@ input[type=button] {
     align-items: flex-start;
   }
 
+  .contact-content h3,
   .contact-content h4 {
     font-size: 1.5em;
   }
@@ -684,10 +714,12 @@ input[type=button] {
     flex-basis: 45%;
   }
 
+  .faq h1,
   .faq h2 {
     width: 100%;
   }
 
+  .faq h2,
   .faq h4,
   .faq p {
     font-size: .875em;
@@ -712,6 +744,7 @@ input[type=button] {
     font-size: 2.25em;
   }
 
+  .form-description h2,
   h3,
   h4 {
     font-size: 1.875em;
@@ -763,6 +796,7 @@ input[type=button] {
     width: 42%;
   }
 
+  footer h3,
   footer h4 {
     font-size: 1.875em;
   }
@@ -774,12 +808,14 @@ input[type=button] {
     padding-bottom: 37.5%;
   }
 
+  .mission h1,
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
   }
 
+  .contact-content h3,
   .contact-content h4 {
     font-size: 1.875em;
   }
@@ -787,11 +823,13 @@ input[type=button] {
   /* ==========================================================================
   FAQ Page
   ========================================================================== */
-  .faq h2 {
+  /* *** No longer needed since updating header hierarchy */
+  /* .faq h2 {
     width: 100%;
     font-size: 3em;
-  }
+  } */
 
+  .faq h2,
   .faq h4,
   .faq p {
     font-size: 1.125em;
@@ -824,11 +862,11 @@ input[type=button] {
   }
 
   a[href]:after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   abbr[title]:after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   /*

@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet" />
   <!-- FontAwesome CDN version 5.5 -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -22,29 +22,32 @@
 
 <body>
   <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
   <!-- Add your site or application content here -->
   <header>
     <div class="content-wrapper">
       <figure>
         <a href="#">
-          <img src="img/unpluggedlogo.png" alt="unplugged logo">
+          <img src="img/unpluggedlogo.png" alt="unplugged logo" />
         </a>
       </figure>
       <div class="header-divider"></div>
       <nav>
         <ul>
-          <li><a href="faq/index.html">FAQ</a></li>
-          <li><a href="about/index.html">About</a></li>
+          <li><a href="faq/">FAQ</a></li>
+          <li><a href="about/">About</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-
     <section class="hero-area">
       <div class="content-wrapper">
         <h1>Retreat from the desk, return refreshed.</h1>
@@ -54,14 +57,15 @@
     <aside>
       <div class="content-wrapper">
         <div class="form-description">
-          <h3>Want to join the next retreat?</h3>
+          <h2>Want to join the next retreat?</h2>
           <p>
             Find out when we are holding our next retreat and how your company or team can sign up!
           </p>
         </div>
         <div class="form">
           <h3>Find out more</h3>
-          <input type="text" name="name" value="name@email.com">
+          <label for="name">Enter your email address to receive our itinerary:</label>
+          <input type="text" name="name" id="name" value="name@email.com">
           <input type="button" value="Download Itinerary">
         </div>
       </div>
@@ -70,7 +74,9 @@
 
     <section class="features">
       <div class="content-wrapper">
-        <h2>Have the work week you always dreamed of — without the bad wifi.</h2>
+        <h2>
+          Have the work week you always dreamed of — without the bad wifi.
+        </h2>
         <div class="features-items">
           <article>
             <p class="fontawesome-icon">
@@ -143,7 +149,6 @@
         </article>
       </div>
     </section>
-
   </main>
   <!-- main wrapper -->
 
@@ -151,7 +156,7 @@
     <div class="content-wrapper">
       <div class="footer-content">
         <div class="contact">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <address>
             <p>
               555-555-5555<br>
@@ -160,16 +165,19 @@
           </address>
         </div>
         <div class="social">
-          <h4>Social</h4>
+          <h3>Social</h3>
           <div class="social-icons">
             <p>
-              <a href="https://www.facebook.com/Skillcrush/" target="_blank"></a>
+              <a href="https://www.facebook.com/Skillcrush/" target="_blank" aria-label="Facebook"><i aria-hidden="true"
+                  class="fab fa-facebook-f"></i></a>
             </p>
             <p>
-              <a href="https://twitter.com/Skillcrush" target="_blank"></a>
+              <a href="https://twitter.com/Skillcrush" target="_blank" aria-label="Twitter"><i aria-hidden="true"
+                  class="fab fa-twitter"></i></a>
             </p>
             <p>
-              <a href="https://www.instagram.com/skillcrush/" target="_blank"></a>
+              <a href="https://www.instagram.com/skillcrush/" target="_blank" aria-label="Instagram"><i
+                  aria-hidden="true" class="fab fa-instagram"></i></a>
             </p>
           </div>
         </div>
@@ -194,7 +202,7 @@
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () {
-      ga.q.push(arguments)
+      ga.q.push(arguments);
     };
     ga.q = [];
     ga.l = +new Date;
